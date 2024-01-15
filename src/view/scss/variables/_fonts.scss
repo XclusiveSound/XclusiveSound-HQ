@@ -1,0 +1,58 @@
+@mixin title {
+ color: $primary-color;
+ font-family: var(--font-inter);
+ font-size: toRem(2.1);
+ font-weight: 500;
+ line-height: toRem(2.5);
+ margin: $mrg-half 0;
+
+ span {
+  color: $secondary-color;
+ }
+
+ @media (max-width: $breakpoint-width_xlarge) {
+  font-size: toRem(1.9);
+  line-height: toRem(2.3);
+ }
+
+ @media (max-width: $breakpoint-width_large) {
+  font-size: toRem(1.7);
+  line-height: toRem(2.1);
+ }
+}
+
+@mixin subtitle {
+ color: $primary-color;
+ font-family: var(--font-inter);
+ font-size: toRem(1.7);
+ font-weight: 500;
+ line-height: toRem(1.9);
+ margin: $mrg-half 0;
+
+ span {
+  color: $secondary-color;
+ }
+
+ @media (max-width: $breakpoint-width_xlarge) {
+  font-size: toRem(1.5);
+  line-height: toRem(1.7);
+ }
+
+ @media (max-width: $breakpoint-width_large) {
+  font-size: toRem(1.3);
+  line-height: toRem(1.5);
+ }
+}
+
+@mixin text {
+ color: $tertiary-color;
+ font-family: var(--font-inter);
+ font-size: toRem(1.1);
+ font-weight: 400;
+ margin-bottom: $mrg-quarter;
+ text-align: justify;
+
+ span {
+  font-weight: 500;
+ }
+}

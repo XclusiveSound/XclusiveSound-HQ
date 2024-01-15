@@ -1,0 +1,26 @@
+* {
+ box-sizing: border-box;
+ border: none;
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ text-decoration: none;
+}
+
+body {
+ background-color: $primary-bg;
+}
+
+h1,
+h2 {
+ @include title;
+}
+
+h3,
+h4 {
+ @include subtitle;
+}
+
+p {
+ @include text;
+}
