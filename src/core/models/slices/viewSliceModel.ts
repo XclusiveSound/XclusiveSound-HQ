@@ -1,1 +1,3 @@
-export interface viewSliceModel {}
+export interface viewSliceModel {
+ currentLanguage: string;
+}
