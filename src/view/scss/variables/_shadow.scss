@@ -1,6 +1,7 @@
 // Shadow
-$navbar-shadow: 0px 2px 4px rgba($secondary-color, 0.6), 0px 4px 3px rgba($secondary-color, 0.2);
 $primary-shadow: 0px 8px 16px rgba($secondary-bg, 0.6);
+$secondary-shadow: 0 3px 0.5px rgba($primary-bg_button, 0.55), 0 3px 0.5px rgba($primary-bg_button, 0.55);
+$tertiary-shadow: 0px 0px 15px rgba($primary-bg_button, 0.55);
 //*> Text shadow
-$primary-text-shadow: 0.55px 0.55px 1.55px rgba($primary-color, 0.65), 0.55px 0.55px 1.55px rgba($primary-color, 0.65),
- 0.55px 0.55px 1.55px rgba($primary-color, 0.65);
+$primary-text-shadow: 0.35px 0.35px 0.9px rgba($primary-color, 0.65), 0.35px 0.35px 0.9px rgba($primary-color, 0.65),
+ 0.35px 0.35px 0.9px rgba($primary-color, 0.65);

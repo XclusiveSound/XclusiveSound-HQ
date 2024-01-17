@@ -24,3 +24,11 @@ h4 {
 p {
  @include text;
 }
+
+main {
+ left: 0;
+ min-height: 100vh;
+ position: absolute;
+ top: 0;
+ width: 100vw;
+}
