@@ -3,10 +3,11 @@
  width: 100vw;
 
  .content {
+  align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   position: relative;
-  padding: $pad-triple 0;
+  padding: $pad-double 0;
   top: 0;
   width: 100%;
 
@@ -37,6 +38,81 @@
 
    a:last-child {
     margin-left: $mrg-half;
+   }
+  }
+
+  .logo {
+   margin: $mrg-onehalf 0;
+   position: relative;
+  }
+
+  .navigation {
+   position: relative;
+   width: 50%;
+
+   ul {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+
+    li {
+     @include subtitle;
+     color: $primary-color;
+     font-size: toRem(1.1);
+     margin: 0 $pad-quarter;
+
+     a {
+      color: $primary-color;
+      position: relative;
+      transition: $transition-tertiary;
+
+      &::after {
+       background-color: #fff;
+       bottom: -3px;
+       content: '';
+       height: 2px;
+       left: 0%;
+       position: absolute;
+       transition: $transition-long;
+       width: 0;
+      }
+
+      &:hover {
+       color: $tertiary-color;
+      }
+
+      &:hover::after,
+      &:focus::after {
+       width: 90%;
+      }
+     }
+    }
+   }
+  }
+  @media (max-width: 1023px) {
+   .navigation {
+    width: 70%;
+
+    ul {
+     li {
+      margin: $pad-quarter;
+     }
+    }
+   }
+  }
+
+  @media (max-width: 767px) {
+   .logo {
+    img {
+     height: 175px;
+     width: 350px;
+    }
+   }
+
+   .navigation {
+    width: 90%;
    }
   }
  }
