@@ -1,12 +1,14 @@
 import { ReactNode } from 'react';
 import { Inter } from '@/public/fonts';
+import { Header } from '@/src/view/components';
 
-type LayoutProps = {
- children: ReactNode;
-};
-
-const Layout = ({ children }: LayoutProps) => {
- return <main className={`${Inter.variable}`}>{children}</main>;
+const Layout = ({ children }: { children: ReactNode }) => {
+ return (
+  <main className={`${Inter.variable}`}>
+   <Header />
+   {children}
+  </main>
+ );
 };
 
 export default Layout;

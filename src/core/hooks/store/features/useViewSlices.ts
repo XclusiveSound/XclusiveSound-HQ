@@ -4,11 +4,11 @@ import { setCurrentLanguage } from '@/src/core/store/features';
 export const useViewSlices = () => {
  const dispatch = useDispatchState();
 
- const toggleLanguage = (currentLanguage: string) => {
+ const actionToggleLanguage = (currentLanguage: string) => {
   dispatch(setCurrentLanguage(currentLanguage));
  };
 
  return {
-  toggleLanguage,
+  actionToggleLanguage,
  };
 };

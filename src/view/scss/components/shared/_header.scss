@@ -1,0 +1,92 @@
+header {
+ position: relative;
+ padding: 0 $pad-onehalf;
+ top: 0;
+ width: 100%;
+
+ .header-content {
+  align-items: center;
+  border-bottom: 2.5px solid $primary-bg_button;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  position: relative;
+  padding: $pad-onehalf $pad-double;
+  top: 0;
+  width: 100%;
+
+  .stamp-name {
+   @include subtitle;
+   line-height: 0;
+   letter-spacing: 1px;
+   margin: 0;
+   position: relative;
+   text-shadow: $primary-text-shadow;
+   transition: $transition-secondary;
+
+   &:hover {
+    letter-spacing: 3.5px;
+    scale: 1.03;
+   }
+  }
+
+  .seeker {
+   position: relative;
+
+   form {
+    display: flex;
+    justify-content: flex-end;
+
+    input {
+     border-radius: 5px;
+     border: none;
+     color: $quaternary-color;
+     font-family: var(--font-inter);
+     font-size: toRem(0.8);
+     font-weight: 600;
+     padding: $pad-min;
+     transition: $transition-secondary;
+     width: 70%;
+
+     &:hover,
+     &:focus {
+      box-shadow: $tertiary-shadow;
+      outline: 0px;
+     }
+    }
+
+    button {
+     background-color: $primary-bg_button;
+     border-radius: 5px;
+     color: $primary-color;
+     cursor: pointer;
+     font-size: toRem(1);
+     font-weight: 600;
+     margin-left: $mrg-min;
+     position: relative;
+     padding: 0 $pad-min;
+     transition: $transition-secondary;
+
+     &:hover {
+      background-color: $primary-bg_button-hover;
+      box-shadow: $tertiary-shadow;
+     }
+    }
+   }
+  }
+
+  @media (max-width: 480px) {
+   flex-direction: column;
+
+   .stamp-name {
+    margin-bottom: $mrg-quarter;
+    text-align: center;
+    width: 90%;
+   }
+
+   form {
+    width: 90%;
+   }
+  }
+ }
+}

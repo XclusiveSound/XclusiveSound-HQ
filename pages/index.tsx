@@ -1,8 +1,11 @@
+import { Fragment } from 'react';
+import { NavigationSection } from '@/src/view/components';
+
 const HomePage = () => {
  return (
-  <div>
-   <h1>XclusiveSound</h1>
-  </div>
+  <Fragment>
+   <NavigationSection />
+  </Fragment>
  );
 };
 
