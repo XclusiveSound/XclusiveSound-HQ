@@ -1,0 +1,43 @@
+.navigation-section {
+ position: relative;
+ width: 100vw;
+
+ .content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: $pad-triple 0;
+  top: 0;
+  width: 100%;
+
+  .language-switcher {
+   text-align: center;
+
+   h3 {
+    margin-top: 0;
+    margin-bottom: $mrg-onehalf;
+   }
+
+   a {
+    position: relative;
+    transition: $transition-secondary;
+
+    img {
+     transition: $transition-tertiary;
+    }
+
+    &:hover {
+     opacity: 0.8;
+
+     img {
+      transform: scale(1.1);
+     }
+    }
+   }
+
+   a:last-child {
+    margin-left: $mrg-half;
+   }
+  }
+ }
+}
